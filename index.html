@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner's Frontend Guide</title>
+  <link rel="stylesheet" href="styleshome.css">
+</head>
+<body>
+  <header>
+    <nav class=".nav">
+      <ul>
+        <li><a id="nav-brand"  href="./index.html">Frontend Guide</a></li>
+      </ul>
+      <input style="display: none;" type="checkbox" class="toggle-check" name="" id="toggle">
+      <label for="toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <ul class="menu">
+        <li class="navanchor"><a  href="./public/resume.html">Projects</a></li>
+        <li class="navanchor"><a id="about-display" href="about.html">About</a></li>
+        <li class="navanchor"><a  href="#services">Services</a></li>
+        <li class="navanchor"><a  id="contacttr" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h2 style="font-size:40px;">Welcome to Beginner's Frontend Guide</h2>
+      <p style="font-size: 25px;">Enhance Your Frontend Skills</p>
+        <br>
+        <p id="lineload" style="font-size:36px;">Awesome Projects using HTML , CSS , Javascript</p>
+      </div>
+        <div class="project-button">
+          <a href="./public/text editor.html" target="_main">Check Projects</a>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <img src="roadmap.png" alt="roadmapPic">
+        <i> Source : <a href="https://alvand.dev/blog/roadmaps-for-web-development/">https://alvand.dev/blog/roadmaps-for-web-development/</a></i>
+        <p>Start with basics of Internet and learning HTML and CSS; don't wait to fully master these and start building simple projects as soon as possible. You could try rebuilding the frontend of your favorite websites using HTML and CSS to start with. Do as many of these projects as possible as you keep learning. Once you are somewhat comfortable with HTML and CSS, start learning some basic JavaScript (DOM manipulation, making AJAX calls etc) and learn how to add interactivity to your websites.</p>
+      </div>
+      <h2>Services</h2>
+      <div class="serviceboxmain">
+      <div class="servicebox">
+        <h2>HTML</h2>
+        <p>HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between web pages. A markup language is used to define the text document within the tag which defines the structure of web pages. This language is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly. Most markup languages (e.g. HTML) are human-readable. The language uses tags to define what manipulation has to be done on the text. </p>
+        <br><br>
+        <a  class="serviceboxbutton"  href="https://www.w3schools.com/html/default.asp" target="_main">For More</a>
+      </div>
+      <div class="servicebox">
+        <h2>CSS</h2>
+        <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independently of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.Hence CSS is related with HTML.</p>
+        <br><br>
+        <a class="serviceboxbutton"  href="https://www.w3schools.com/css/default.asp" target="_main">For More</a>
+      </div>
+      <div class="servicebox">
+        <h2>Javascript</h2>
+        <p>JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language which is also known as the scripting language for webpages. It is well-known for the development of web pages, and many non-browser environments also use it. JavaScript is a dynamically typed language. JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript is both an imperative and declarative type of language. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements.</p>
+        <br><br>
+        <a class="serviceboxbutton"  href="https://www.w3schools.com/js/DEFAULT.asp " target="_main">For More</a>
+      </div>
+
+    </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-in">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" >Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Beginner's Frontend Guide. All rights reserved  .</p>
+  </footer>
+
+
+  <script>
+
+    let contact=document.querySelector(".contact-in");
+    contact.addEventListener('submit',(event)=>{
+      event.preventDefault();
+      alert('We will contact you soon !!\nThank You !!');
+      for(let i of contact){
+        i.value="";
+      }
+    })
+
+const textElement = document.getElementById("lineload");
+const text ="Awesome Projects using HTML , CSS , Javascript"
+let index = 1;
+
+const writeText = () => {
+  textElement.innerText = text.slice(0, index);
+  index++;
+
+  setTimeout(writeText, 40);
+};
+writeText();
+
+  </script>
+</body>
+</html>

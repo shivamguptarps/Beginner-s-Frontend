@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person-Counter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #1e1e1e;
+            color:#1a86b5;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .content h2{
+            text-align: center;
+        }
+        .content button{
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content p{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>No of People Entered</h1>
+            <h2 id="counter">0</h2>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save" onclick="save()">SAVE</button>
+            <p id="entries">Previous enteries: &nbsp; </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

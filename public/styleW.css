@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mainheading {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(245, 241, 240);
+    margin-top: 0.3rem;
+    margin-bottom: 1.7rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #e2e4f9;
+    margin: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 7px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0.2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+}
+
+nav li a:hover {
+    background-color: #fafbfb;
+    border-radius: 1rem;
+}
+nav li a {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0.4rem 0.6rem;
+    /* margin: 2px; */
+    background-color: rgb(226, 228, 249);
+}
+
+#maindiv {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.box {
+    /* width: 50%; */
+    max-width: 700px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 1% 2%;
+    align-content: center;
+    font-size: 17px;
+    margin: 1%;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+.box:hover {
+    transform: scale(1.01);
+}
+
+
+body {
+
+    background-image: url(styleW\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.project_brief{
+    margin-top: 0.6rem;
+}
+
+.authorco {
+    font-size: 18.5px;
+    margin: 2% auto;
+}
+
+.project-button{
+    display: inline-block;
+    padding: 1.3%;
+    margin: 1%;
+    margin-left: auto;  
+    font-size: 17px;
+    background-color: #83ad3f;
+}
+
+.project-button:hover {
+    background-color: #0df1de;
+}
+
+
+.name1 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .item-line {
+        margin: 10%;
+
+      }
+      input {
+        border: none;
+        padding: 2%;
+        margin-right: 2%;
+        width: 40%;
+        background: #1d2b3a;
+        
+        border-radius: 0;
+        color: white;
+        outline: none;
+      }
+      input:focus{
+        border-bottom: 2px solid white;
+      }
+      input::placeholder {
+        color: rgb(105, 105, 105);
+      }
+
+      button {
+        background-color: rgb(6, 170, 94);
+        text-align: center;
+        padding: 2.5% 7%;
+        border-radius: 0.6rem;
+        border: none;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h1>Techno <sup>TM</sup></h1>
+        <img src="sign-up-8044864-6430773.png" alt="" />
+        <p>Sign up today to get exciting news</p>
+      </div>
+      <div class="right-container">
+        <h1>Get Started</h1>
+        <form action="/action">
+          <div class="item-line">
+            <input type="text" name="fname" placeholder="First Name" id="fname" required />
+            <label for="fname"></label>
+            <input type="text" name="lname" placeholder="Last Name" id="lname" />
+            <label for="lname"></label>
+          </div>
+          <div class="item-line">
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+            <label for="email"></label>
+            <input type="tel" name="tel" id="phone" placeholder="Phone" required/>
+            <label for="phone"></label>
+          </div>
+          <div class="item-line">
+            <input type="password" name="pass" id="pass" placeholder="Password" required/>
+            <label for="pass"></label>
+            <input type="password" name="cpass" id="cpass" placeholder="Confirm Password" required/>
+            <label for="cpass"></label>
+          </div>
+          <button>Create Account</button>
+        </form>
+        <br>
+        <p>Already have an account..? <a href="login.html">LOG IN</a></p>
+      </div>
+    </div>
+  </body>
+</html>

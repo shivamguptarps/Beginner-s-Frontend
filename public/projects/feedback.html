@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    
+
+</head>
+<body marginwidth="40px" marginheight="30px">
+    <form action="#" method="post">
+        <h1><u>Feedback About Faculty</u></h1>
+        <div >
+        <label for="sName">Name : </label>
+        <input type="text" name="name" id="sName" placeholder="Enter name" pattern="[a-z-A-Z]" required>
+    </div>
+    <br>
+        <div >
+        <label for="sRoll">Roll No. : </label>
+        <input type="number" name="roll" id="sRoll" placeholder="Enter Rol" required>
+    </div>
+    <br>
+    <div>
+        <label for="sEmail">Email : </label>
+        <input type="email" name="email" id="sEmail" placeholder="enter email" required>
+    </div>
+    <br>
+    <div>
+    <label for="fName">Faculty Name : </label>
+    <select name="faculty name" id="fName" required>
+    <option value="none">Select</option>
+    <option value="Ritu">Dr. Ritu Garg</option>
+    <option value="AKJain">Dr. A.K. Jain</option>
+    <option value="Amandeep">Dr. Amandeep Kaur</option>
+    <option value="Himansu">Dr.Himansu</option>
+    <option value="Shweta">Dr.Shweta Sharma</option>
+</select>
+</div>
+<br>
+<div>
+    
+  <span>Rating : </span>
+
+    <label for="one">1</label>
+    <input type="radio" name="rate" id="one" value="1" required>
+    <label for="two">2</label>
+    <input type="radio" name="rate" id="two" value="2">
+    <label for="three">3</label>
+    <input type="radio" name="rate" id="three" value="3">
+    <label for="four">4</label>
+    <input type="radio" name="rate" id="four" value="4">
+    <label for="five">5</label>
+    <input type="radio" name="rate" id="five" value="3">
+
+
+</div>
+<br>
+<div>
+    <label for="positive">Positive Aspects : </label>
+    <br>
+    <textarea name="pAspect" id="positive" cols="40" rows="5" placeholder="Enter Positive Aspects" required></textarea>
+</div>
+<br>
+<div>
+    <label for="improvement">Improvement Required : </label>
+    <br>
+    <textarea name="improve" id="improvement" cols="40" rows="5" placeholder="Enter Improvement Required" required></textarea>
+</div>
+<br>
+<div>
+    <button>Submit</button>
+</div>    
+</form>
+</body>
+</html>
