@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   body {
@@ -10,6 +9,7 @@
   .container {
     display: flex;
     color: white;
+    flex-wrap: wrap;
   }
   .left-container {
     background-color: rgb(6, 170, 94);
@@ -32,3 +32,13 @@
   a{
     color: rgb(6, 170, 94);
   }
+
+  @media (max-width:600px){
+         
+    .left-container{
+      width: 100%;
+    }
+    .right-container{
+
+    }
+}
